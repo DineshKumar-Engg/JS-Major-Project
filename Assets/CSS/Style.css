@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin-bottom: 10px;
 }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
 input[type=text]:invalid {
     border: red solid 1px;
@@ -22,11 +25,8 @@ input[type=text]:invalid {
 .container > label {
    text-align: center;
 }
-#comment{
-    background-color:grey;
-    width: 50%;
-    height:50px;
-}
+
+
 #addComments {
     width: 10%;
     padding: 5px;
@@ -41,4 +41,132 @@ input[type=text]:invalid {
     background-color: rgb(144, 238, 107);
     color:black;
     
+}
+
+.card{
+    width:470px;
+    height:777px;
+    border-radius:6px;
+    background-color:#ffffff;
+    padding: 0px;
+    
+}
+.TopSection{
+    width:410px;
+    height: 40px;
+    background-color:#ffffff;
+    margin:8px 48px 8px 12px;
+    display: flex;
+    position:absolute;
+}
+.Logo{
+    width:42px;
+    height: 42px;
+}
+.Logo>img{
+  background-color: #ffffff;
+  width: 42px;
+  margin:0px;
+  text-align: start;
+}
+.Title{
+    margin:0px 5px;
+    background-color:#ffffff;
+    width:368px;
+    height:40px;
+}
+.Title>h1{
+    width: 110px;
+    height:18px;
+    font-size: 14px;
+    margin:10px 261px 12px 2px;
+    background-color: #ffffff;
+    padding: 2px;
+    color: #262626;
+}
+.optionIcon{
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    margin:8px 4px 8px 429px;
+    padding: 10px;
+    color:#262626;
+}
+.post{
+    width:470px;
+    height: 470px;
+    margin: 0px;
+}
+.element{
+    margin: 0px;
+    /* background-color: #E8F9FD; */
+    width:470px;
+    height:34px;
+    padding:8px;
+}
+.tag{
+    width:40px;
+    height:40px;
+    margin: 10px;
+}
+.tag1{
+    width:40px;
+    height:40px;
+    margin-left:280px;
+}
+.Likes{
+    width: 446px;
+    height: 18px;
+    padding-left:30px;
+    font-weight: 600;
+    color: #262626;
+}
+  
+.bottom{
+    width:470px;
+    height:49px;
+    padding:4px 12px;
+    position: relative;
+    justify-content: center;
+    display: block;
+}
+.commentMain{
+    background-color:#ffffff;
+    width:446px;
+    height:40px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Emoji{
+    width:36px;
+    height:40px;
+    padding:8px 12px 8px 2px;
+    margin:0px;
+}
+.textarea{
+     width:410px;
+    height: 40px;
+    margin: 0px;
+}
+.comment{
+    width: 381px;
+    height: 18px;
+    margin:11px 28px 11px 0px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+#NewPost{
+    border: none;
+    color: rgb(0,149,246);
+    margin:0px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+.btnPost{
+    margin-left:417px;
+    margin-bottom:0px;
+    position:absolute;
 }
