@@ -35,21 +35,24 @@ input[type=text]:invalid {
     align-self: center;
 }
 
-.wrapper > button {
-    margin-right: 5px;
+.reply,.deleteComment {
+    margin-left:20px;
     padding: 5px;
-    background-color: rgb(144, 238, 107);
+    border:1px #DFDFDE solid;
+    background-color: #F0F0F0;
+    border-radius: 10px;
     color:black;
+    background: transparent;
     
 }
 
 .card{
     width:470px;
-    height:777px;
+    height:1000px;
     border-radius:6px;
     background-color:#ffffff;
     padding: 0px;
-    
+    border:1px solid #262626;
 }
 .TopSection{
     width:410px;
@@ -88,7 +91,7 @@ input[type=text]:invalid {
     background-color: #ffffff;
     width: 40px;
     height: 40px;
-    margin:8px 4px 8px 429px;
+    margin:8px 4px 8px 425px;
     padding: 10px;
     color:#262626;
 }
@@ -104,22 +107,29 @@ input[type=text]:invalid {
     height:34px;
     padding:8px;
 }
-.tag{
-    width:40px;
-    height:40px;
-    margin: 10px;
-}
 .tag1{
     width:40px;
     height:40px;
-    margin-left:280px;
+    margin-left:45px; 
 }
+.tag2{
+    width:40px;
+    height:40px;
+    margin-left:18px; 
+}
+.tag3{
+    width:40px;
+    height:40px;
+    margin-left:310px;
+}
+
 .Likes{
     width: 446px;
     height: 18px;
     padding-left:30px;
     font-weight: 600;
     color: #262626;
+    margin: 10px;
 }
   
 .bottom{
@@ -149,6 +159,7 @@ input[type=text]:invalid {
      width:410px;
     height: 40px;
     margin: 0px;
+   
 }
 .comment{
     width: 381px;
@@ -157,8 +168,11 @@ input[type=text]:invalid {
     border: none;
     outline: none;
     resize: none;
+    font-size:15px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
 }
-#NewPost{
+#addComments{
     border: none;
     color: rgb(0,149,246);
     margin:0px;
@@ -169,4 +183,57 @@ input[type=text]:invalid {
     margin-left:417px;
     margin-bottom:0px;
     position:absolute;
+}
+#LikesButton:hover{
+    color:red;
+}
+#LikesButton{
+    top:546px;
+    font-size: 25px;
+    position:absolute;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #262626;
+}
+.textBox{
+   border:1px #DFDFDE solid;
+   border-radius: 25px;
+   margin-left:5px;
+   margin-right:50px;
+   justify-content: center;
+   align-items: center;
+   text-indent: 2em;
+}
+.likeComment{
+    margin-left:18px;
+    text-align: left;
+    color:#262626;
+    outline: none;
+    border:none;
+    font-size:15px;
+}
+.ReplyTextArea{
+    width: 381px;
+    height: 25px;
+    margin:11px 28px 11px 0px;
+    border:1px #DFDFDE solid;
+    outline: none;
+    resize: none;
+    font-size:15px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:6px;
+}
+.addReply,.cancelReply{
+    margin-left:20px;
+    padding: 5px;
+    border:1px #DFDFDE solid;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    color:black;
+    background: transparent;
+}
+.ReplyTextArea::placeholder{
+    text-indent: 10px;
 }
