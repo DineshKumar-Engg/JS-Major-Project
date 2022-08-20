@@ -48,11 +48,11 @@ input[type=text]:invalid {
 
 .card{
     width:470px;
-    height:1000px;
+    height: 800px;
     border-radius:6px;
     background-color:#ffffff;
     padding: 0px;
-    border:1px solid #262626;
+    /* border:1px solid #262626; */
 }
 .TopSection{
     width:410px;
