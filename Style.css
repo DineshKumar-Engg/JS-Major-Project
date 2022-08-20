@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+input[type=text]:invalid {
+    border: red solid 1px;
+}
+
+.container {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.container > label {
+   text-align: center;
+}
+
+
+#addComments {
+    width: 10%;
+    padding: 5px;
+    background-color:grey;
+    color:black;
+    align-self: center;
+}
+
+.reply,.deleteComment {
+    margin-left:20px;
+    padding: 5px;
+    border:1px #DFDFDE solid;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    color:black;
+    background: transparent;
+    
+}
+
+.card{
+    width:470px;
+    height:1000px;
+    border-radius:6px;
+    background-color:#ffffff;
+    padding: 0px;
+    border:1px solid #262626;
+}
+.TopSection{
+    width:410px;
+    height: 40px;
+    background-color:#ffffff;
+    margin:8px 48px 8px 12px;
+    display: flex;
+    position:absolute;
+}
+.Logo{
+    width:42px;
+    height: 42px;
+}
+.Logo>img{
+  background-color: #ffffff;
+  width: 42px;
+  margin:0px;
+  text-align: start;
+}
+.Title{
+    margin:0px 5px;
+    background-color:#ffffff;
+    width:368px;
+    height:40px;
+}
+.Title>h1{
+    width: 110px;
+    height:18px;
+    font-size: 14px;
+    margin:10px 261px 12px 2px;
+    background-color: #ffffff;
+    padding: 2px;
+    color: #262626;
+}
+.optionIcon{
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    margin:8px 4px 8px 425px;
+    padding: 10px;
+    color:#262626;
+}
+.post{
+    width:470px;
+    height: 470px;
+    margin: 0px;
+}
+.element{
+    margin: 0px;
+    /* background-color: #E8F9FD; */
+    width:470px;
+    height:34px;
+    padding:8px;
+}
+.tag1{
+    width:40px;
+    height:40px;
+    margin-left:45px; 
+}
+.tag2{
+    width:40px;
+    height:40px;
+    margin-left:18px; 
+}
+.tag3{
+    width:40px;
+    height:40px;
+    margin-left:310px;
+}
+
+.Likes{
+    width: 446px;
+    height: 18px;
+    padding-left:30px;
+    font-weight: 600;
+    color: #262626;
+    margin: 10px;
+}
+  
+.bottom{
+    width:470px;
+    height:49px;
+    padding:4px 12px;
+    position: relative;
+    justify-content: center;
+    display: block;
+}
+.commentMain{
+    background-color:#ffffff;
+    width:446px;
+    height:40px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Emoji{
+    width:36px;
+    height:40px;
+    padding:8px 12px 8px 2px;
+    margin:0px;
+}
+.textarea{
+     width:410px;
+    height: 40px;
+    margin: 0px;
+   
+}
+.comment{
+    width: 381px;
+    height: 18px;
+    margin:11px 28px 11px 0px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size:15px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#addComments{
+    border: none;
+    color: rgb(0,149,246);
+    margin:0px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+.btnPost{
+    margin-left:417px;
+    margin-bottom:0px;
+    position:absolute;
+}
+#LikesButton:hover{
+    color:red;
+}
+#LikesButton{
+    top:546px;
+    font-size: 25px;
+    position:absolute;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #262626;
+}
+.textBox{
+   border:1px #DFDFDE solid;
+   border-radius: 25px;
+   margin-left:5px;
+   margin-right:50px;
+   justify-content: center;
+   align-items: center;
+   text-indent: 2em;
+}
+.likeComment{
+    margin-left:18px;
+    text-align: left;
+    color:#262626;
+    outline: none;
+    border:none;
+    font-size:15px;
+}
+.ReplyTextArea{
+    width: 381px;
+    height: 25px;
+    margin:11px 28px 11px 0px;
+    border:1px #DFDFDE solid;
+    outline: none;
+    resize: none;
+    font-size:15px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:6px;
+}
+.addReply,.cancelReply{
+    margin-left:20px;
+    padding: 5px;
+    border:1px #DFDFDE solid;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    color:black;
+    background: transparent;
+}
+.ReplyTextArea::placeholder{
+    text-indent: 10px;
+}
