@@ -215,6 +215,10 @@ body {
     font-weight: 500;
     font-family:Arial, Helvetica, sans-serif;
     border-radius:6px;
+    display: flex;
+    width:80%;
+    height:40px;
+    margin: 10px;
 }
 .reply,.deleteComment {
     margin-left:20px;

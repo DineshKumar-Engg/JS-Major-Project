@@ -61,7 +61,7 @@ document.getElementById('allComments').addEventListener('click', function (e) {
     if (hasClass(e.target, 'reply')) {
         const parentDiv = e.target.parentElement;
         const wrapDiv = document.createElement('div');
-        wrapDiv.style.marginLeft = (Number.parseInt(parentDiv.style.marginLeft) +15).toString() + 'px';
+        wrapDiv.style.marginLeft = (Number.parseInt(parentDiv.style.marginLeft) +2).toString() + 'px';
         wrapDiv.className = 'wrapper';
         const textArea = document.createElement('textarea');
         textArea.style.marginRight = '0px';
