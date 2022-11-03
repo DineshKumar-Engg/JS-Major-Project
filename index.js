@@ -1,16 +1,21 @@
 window.onload = function setTemplate() {
-    document.getElementById('allComments').innerHTML = localStorage.getItem('template');
+        document.getElementById('allComments').innerHTML = localStorage.getItem('template');
+      
 };
 
 const commentContainer = document.getElementById('allComments');
 document.getElementById('addComments').addEventListener('click', function (ev) {
-   addComment(ev);
+    const commentText = document.getElementById('comment').value;
+    commentText ==='' ? alert("should not post empty comment !!!!") : addComment(ev);
+  
 });
 
 function addComment(ev) {
     let commentText, wrapDiv;
     const textBox = document.createElement('div');
     textBox.className='textBox'
+    // const commentFeature = document.createElement('div');
+    // commentFeature.className='commentFeature'
     const replyButton = document.createElement('button');
     replyButton.className = 'reply';
     replyButton.innerHTML = 'Reply';
@@ -19,7 +24,6 @@ function addComment(ev) {
     likeButton.className = 'likeComment';
     const likePara = document.createElement('span');
     likePara.innerHTML = 'likes';
-    likePara.id=''
     likePara.className = 'likepara';
     const deleteButton = document.createElement('button');
     deleteButton.innerHTML = 'Delete';
@@ -31,7 +35,8 @@ function addComment(ev) {
         commentText = document.getElementById('comment').value;
         document.getElementById('comment').value = '';
         textBox.innerHTML = commentText;
-        //textBox.style.backgroundColor = "cornflowerblue";
+        //commentFeature.append( replyButton, likeButton,likePara, deleteButton)
+        //wrapDiv.append(textBox,commentFeature);
         wrapDiv.append(textBox, replyButton, likeButton,likePara, deleteButton);
         commentContainer.appendChild(wrapDiv);
     } else {
@@ -39,9 +44,11 @@ function addComment(ev) {
         commentText = ev.target.parentElement.firstElementChild.value;
         textBox.innerHTML = commentText;
         wrapDiv.innerHTML = '';
+        // commentFeature.append( replyButton, likeButton,likePara, deleteButton)
+        // wrapDiv.append(textBox,commentFeature);
         wrapDiv.append(textBox, replyButton, likeButton,likePara, deleteButton);
     }
-    setOnLocalStorage();
+    setOnLocalStorage();      
 }
 
 function setOnLocalStorage () {
@@ -54,10 +61,10 @@ document.getElementById('allComments').addEventListener('click', function (e) {
     if (hasClass(e.target, 'reply')) {
         const parentDiv = e.target.parentElement;
         const wrapDiv = document.createElement('div');
-        wrapDiv.style.marginLeft = (Number.parseInt(parentDiv.style.marginLeft) + 15).toString() + 'px';
+        wrapDiv.style.marginLeft = (Number.parseInt(parentDiv.style.marginLeft) +15).toString() + 'px';
         wrapDiv.className = 'wrapper';
         const textArea = document.createElement('textarea');
-        textArea.style.marginRight = '20px';
+        textArea.style.marginRight = '0px';
         textArea.className='ReplyTextArea'
         textArea.placeholder='Reply Comments.....'
         const addButton = document.createElement('button');
@@ -73,8 +80,7 @@ document.getElementById('allComments').addEventListener('click', function (e) {
         addComment(e);
     } else if(hasClass(e.target, 'likeComment')) {
          const likeBtnValue = e.target.innerHTML;
-         e.target.innerHTML = likeBtnValue !== '0'? Number.parseInt(likeBtnValue) + 1 : 1 ;
-        
+         e.target.innerHTML = likeBtnValue !== ''? Number.parseInt(likeBtnValue) + 1 : 1 ;
         setOnLocalStorage();
     } else if(hasClass(e.target, 'cancelReply')) {
         e.target.parentElement.innerHTML = '';
@@ -88,15 +94,13 @@ document.getElementById('allComments').addEventListener('click', function (e) {
 
 function ColorChange(){
 var likeBtn=document.getElementById("LikesButton");
-var LikeCtn =document.getElementById("Likes");
-var value =LikeCtn.innerHTML;
-    if(likeBtn.style.color=="red"){
-        likeBtn.style.color="#262626";
+var value = 0;
+    if(likeBtn.style.fill=="red"){
+        likeBtn.style.fill="#262626";
     }
     else{
-        likeBtn.style.color="red";
-        value++;
-        document.getElementById("Likes").innerHTML=value;
-        
+        likeBtn.style.fill="red";
+        e.target.innerHTML = likeBtnValue !== '0'? Number.parseInt(likeBtnValue) + 1 : 1 ;
+        document.getElementById("Likes").innerHTML= value + "likes";
     }
 }
